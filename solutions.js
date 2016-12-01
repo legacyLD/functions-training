@@ -97,18 +97,17 @@ function findWdi(arr){
 // ***
 // ****
 // *****
-function printTriangle(length) {
-	for(var i = 1; i <= length; i++) {
-
-		var tier = '';
-
-		for(var j = 0; j < i; j++) {
-			tier += '*';
-		}
-
-		console.log(tier);
+function printPyramid(length) {
+for(i=1; i<=length; i++) {
+		var asterisk = "* ";
+		var space = " ";
+		var invert = length-i;
+		var tree = space.repeat(invert) + asterisk.repeat(i);
+		console.log(tree);
 	}
 }
+
+printPyramid(10);
 //printTriangle(3);
 
 

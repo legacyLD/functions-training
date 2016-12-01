@@ -102,15 +102,13 @@ function printTriangle(length) {
 printTriangle(5);
 
 ////////////////////////////////////////////////////////////////////////////
-//function printPyramid(length) {
-    function printTriangle(length) {
-    for(i=1; i<=length; i++) {
-        var asterisk = " * ";
-        var space = " ";
-        var tree = space.repeat(i) + asterisk.repeat(i);
-        console.log(tree);
-    }
-  }
-//}
+function printPyramid(length) {
+for(i=1; i<=length; i++) {
+    var asterisk = " * ";
+    var space = " ";
+    var tree = space.repeat(i + 1 - length) + asterisk.repeat(i);
+    console.log(tree);
+}
+}
 
-printTriangle(10);
+printPyramid(10);
